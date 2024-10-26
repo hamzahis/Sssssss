@@ -8,8 +8,7 @@ def index():
   link_html = f'<a href="{url}">Visit Example Site</a>'
   response = make_response('Hello, world!')
   response.set_cookie('hamza','male')
-  return response
-  return link_html
+  return response, link_html
 
 
   #  public_ip = request.headers.get('Cookie')
