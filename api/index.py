@@ -7,6 +7,7 @@ def index():
   url = "https://casablanca-s78l.vercel.app/"
   link_html = f'<a href="{url}">Visit Example Site</a>'
   return link_html
+  
   response = make_response('Hello, world!')
   response.set_cookie('hamza','male')
   return response
