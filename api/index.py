@@ -6,12 +6,10 @@ app = Flask(__name__)
 def index():
   url = "https://casablanca-s78l.vercel.app/"
   link_html = f'<a href="{url}">Visit Example Site</a>'
-  return link_html
-  
-def atrad():  
   response = make_response('Hello, world!')
   response.set_cookie('hamza','male')
   return response
+  return link_html
 
 
   #  public_ip = request.headers.get('Cookie')
