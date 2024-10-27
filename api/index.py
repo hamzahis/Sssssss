@@ -17,6 +17,7 @@ def set_cookie():
     
     return response
 
+"""
 @app.route('/get-cookie')
 def get_cookie():
     # This endpoint allows a third-party site to access the cookie value
@@ -25,7 +26,7 @@ def get_cookie():
         return jsonify({"user_data": user_data})
     else:
         return jsonify({"error": "No user data found"}), 404
-
+"""
 if __name__ == "__main__":
     app.run(debug=True)
 
