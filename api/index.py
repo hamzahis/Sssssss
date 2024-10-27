@@ -1,9 +1,9 @@
 from flask import Flask, make_response, jsonify, request
 from flask_cors import CORS
 
-CORS(app)
-app = Flask(__name__)
 
+app = Flask(__name__)
+CORS(app)
 @app.route('/')
 def set_cookie():
     url = "https://casablanca-s78l.vercel.app/"
