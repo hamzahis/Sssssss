@@ -11,7 +11,7 @@ def home():
     response = make_response(link_html)
     
     # Set the cookie
-    response.set_cookie('hamza', 'one')
+    response.set_cookie('hamza', 'one', samesite='None', secure=True)
     
     return response
 
