@@ -4,13 +4,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    public_ip = request.headers.get('Cookie')
+    return f"Your public IP is: {public_ip}"
+    
+    """
     if 'first_visit' not in request.cookies:
         resp = make_response(render_template('index.html'))
         resp.set_cookie('first_visit', 'true')  # 30 days
         return resp
     else:
         return render_template('index.html')
-
+"""
 if __name__ == '__main__':
     app.run(debug=True)
 
