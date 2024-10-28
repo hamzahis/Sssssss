@@ -27,6 +27,12 @@ def get_cookie():
     else:
         return jsonify({"error": "No user data found"}), 404
 
+
+@app.route('/fetch-data')
+def fetch_data():
+    # Render the HTML template with the JavaScript fetch code
+    return render_template('index.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
 
