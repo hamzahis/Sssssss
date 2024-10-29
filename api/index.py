@@ -13,7 +13,7 @@ def set_cookie():
     response = make_response(link_html)
     
     # Set a cookie that can be accessed by the third-party
-    response.set_cookie('user_data', 'batman', samesite='None', secure=True)
+    response.set_cookie('user_data', 'adann', samesite='None', secure=True)
     
     return response
 
